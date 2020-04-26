@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Movie favorites</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Clientes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/productos">Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link lp" routerLink="/listado-pedidos">Listado Pedidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pa" routerLink="/pedidos">Pedido Actual</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pa">0</a>
+      </li>
+
+      <li class="nav-item" id="nombreUsuario">
+        <a class="nav-link navbar-text">{{
+          this.PedidoServicio.pedido.nombreCliente
+        }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

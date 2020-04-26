@@ -1,0 +1,41 @@
+<div class="container">
+  <div *ngFor="let clientes of ClienteLocales" id="clientes">
+    <p>Cliente:{{ clientes.nombre }}</p>
+    <p>Edad:{{ clientes.edad }}</p>
+  </div>
+  <br />
+  <button class="btn btn-primary" (click)="guardarCliente()">
+    Guardar Cliente
+  </button>
+  <button
+    class="btn btn-danger"
+    (click)="eliminarClientes()"
+    id="eliminarClientes"
+  >
+    Eliminar Cliente
+  </button>
+</div>
+<div class="container">
+  <div *ngFor="let productos of ProductoLocales" id="proudctos">
+    <p>Nombre del Producto:{{ productos.nombreProducto }}</p>
+    <p>cantidad:{{ productos.cantidad }}</p>
+    <p>Precio:{{ productos.precio | currency: "$" }}</p>
+  </div>
+  <button class="btn btn-primary" (click)="guardarProducto()">
+    Guardar Productos
+  </button>
+  <button
+    class="btn btn-danger"
+    (click)="eliminarProductos()"
+    id="eliminarProductos"
+  >
+    Eliminar Producto
+  </button>
+</div>
+<br />
+<br />
+<div class="container">
+  <button class="btn btn-dark" (click)="limpiarClientes()" id="limpiarTodo">
+    Limpiar Todo
+  </button>
+</div>
