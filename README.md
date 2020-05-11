@@ -1,4 +1,7 @@
 # Pedidos
+Desarollo de sistema de pedidor utilizando:
+Angular como frontend,
+TypeScript,localstorage para almacenar datos en el navegador
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
