@@ -1,5 +1,5 @@
 # Pedidos
-Desarollo de sistema de pedidor utilizando:
+Desarollo de sistema de pedidos utilizando:
 Angular como frontend,
 TypeScript,localstorage para almacenar datos en el navegador
 
